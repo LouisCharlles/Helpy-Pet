@@ -1,0 +1,49 @@
+header{
+    display: flex;
+    align-items: center;
+    gap: 30rem;
+}
+header h1{
+    display: flex;
+    align-items: center;
+}
+header h1::before{
+    content: "";
+    display: inline-block;
+    background: url(/img/icones/helpy_logo.svg);
+    width: 48px;
+    height: 42px;
+    margin-right: 8px;
+}
+header ul{
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header ul li a{
+    display: inline-block;
+    color: inherit;
+}
+
+.btn-buscar{
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+}
+
+.btn-buscar::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: url(/img/icones/lupa.svg);
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+}
+
+
+
+

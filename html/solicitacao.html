@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpy - Solicitações</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body id="solicitacao">
+    <header class="container">
+        <h1><a class="font-1-m cor-12"href="index.html">Helpy Pet</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li class="btn-buscar">Buscar</li>
+                <li><a href="assinaturas.html">Assinatura</a></li>
+                <li><a href="perfil.html"><img src="/img/icones/perfil.svg" alt="perfil"></a></li>
+                <li><a href="carrinho.html"><img src="/img/icones/carrinho.svg" alt="carrinho"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="solicitacao-bg">
+        <div class="container titulo">
+            <p class="font-2-m-b cor-10">COTAÇÕES NO SEU EMAIL</p>
+            <h1 class="font-1-xxl cor-12">solicite um orçamento</h1>
+        </div>
+        <form class="orcamento container" action="./">
+            <div class="orcamento-produto">
+                <h2 class="font-1-xs cor-5">Pet ou Assinatura?</h2>
+                <input type="radio" id="pet" name="tipo" value="pet">
+                <label for="pet">Pet</label>
+                <input type="radio" id="assinatura" name="tipo" value="assinatura">
+                <label for="assinatura">Assinatura</label>
+
+                <div class="orcamento-conteudo" id="solicitacao-pet">
+                    <h2 class="font-1-xs cor-5">Escolha o seu</h2>
+                    <input type="radio" id="pepe" name="pet" value="pepe">
+                    <label for="pepe">Pepe</label>
+                    <div class="orcamento-detalhes">
+                        <ul class="font-1-xs cor-8">
+                            <li class="font-2-s cor-8">
+                                <img src="/img/icones/solicitacoes/check_amarelo.svg" alt="check">
+                                <p>Cachorro</p>
+                            </li>
+                            <li class="font-2-s cor-8">
+                                <img src="/img/icones/solicitacoes/check_amarelo.svg" alt="check">
+                                <p>Chihuahua</p>
+                            </li>
+                            <li class="font-2-s cor-8">
+                                <img src="/img/icones/solicitacoes/check_amarelo.svg" alt="check">
+                                <p>Vermifugado</p>
+                            </li>
+                            <li class="font-2-s cor-8">
+                                <img src="/img/icones/solicitacoes/check_amarelo.svg" alt="check">
+                                <p>Castrado</p>
+                            </li>
+                        </ul>
+                        <img src="/img/pets/cachorro_orelhudo.png" width="618" height="625" alt="Cachorro Chihuahua">
+                    </div>
+                    <input type="radio" id="lulu" name="pet" value="lulu">
+                    <label for="lulu">Lulu</label>
+                    <div class="orcamento-detalhes">
+                        <ul class="font-1-s cor-8">
+                            <li class="font-2-s cor-8">
+                                <img src="/img/icones/solicitacoes/check_amarelo.svg" alt="check">
+                                <p>Cachorro</p>
+                            </li>
+                            <li class="font-2-s cor-8">
+                                <img src="/img/icones/solicitacoes/check_amarelo.svg" alt="check">
+                                <p>Sem Raça</p>
+                            </li>
+                            <li class="font-2-s cor-8">
+                                <img src="/img/icones/solicitacoes/check_amarelo.svg" alt="check">
+                                <p>Vermifugado</p>
+                            </li>
+                            <li class="font-2-s cor-8">
+                                <img src="/img/icones/solicitacoes/check_amarelo.svg" alt="check">
+                                <p>Castrado</p>
+                            </li>
+                        </ul>
+                        <img src="/img/pets/cachorro_preto.png" width="603" height="594" alt="cachorro preto sem raça">
+                    </div>
+                    <input type="radio" id="fred" name="pet" value="fred">
+                    <label for="fred">Fred</label>
+                    <div class="orcamento-detalhes">
+                        <ul class="font-1-xs cor-8">
+                            <li class="font-2-s cor-8">
+                                <img src="/img/icones/solicitacoes/check_amarelo.svg" alt="check">
+                                <p>Cachorro</p>
+                            </li>
+                            <li class="font-2-s cor-8">
+                                <img src="/img/icones/solicitacoes/check_amarelo.svg" alt="check">
+                                <p>Poodle</p>
+                            </li>
+                            <li class="font-2-s cor-8">
+                                <img src="/img/icones/solicitacoes/check_amarelo.svg" alt="check">
+                                <p>Vermifugado</p>
+                            </li>
+                            <li class="font-2-s cor-8">
+                                <img src="/img/icones/solicitacoes/check_amarelo.svg" alt="check">
+                                <p>Castrado</p>
+                            </li>
+                        </ul>
+                        <img src="/img/pets/cachorro_felpudo.png" width="540" height="618" alt="Cachorro Poodle">
+                    </div>
+                </div>
+
+                <div class="orcamento-conteudo" id="solicitacao-assinatura">
+                    <h2 class="font-1-xs cor-5">Escolha o seu Plano</h2>
+                    <input type="radio" id="prata" name="assinatura" value="prata">
+                    <label for="prata">Pata de Prata <span>R$ 199</span></label>
+
+                    <input type="radio" id="ouro" name="assinatura" value="ouro">
+                    <label for="ouro">Pata de Ouro <span>R$ 249</span></label>
+                </div>
+            </div>
+            <div class="orcamento-dados form">
+                <h2 class="font-1-s cor-12 col-2">DADOS PESSOAIS</h2>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                </div>
+                <div>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Seu sobrenome">
+                </div>
+                <div>
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+                </div>
+                <div>
+                    <label for="celular">Telefone/Celular</label>
+                    <input type="number" id="celular" name="celular" placeholder="+55 00 0000-0000">
+                </div>
+                <div class="col-2">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="">
+                </div>
+                <h2 class="font-1-s cor-12 col-2">ENTREGA</h2>
+                <div>
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" placeholder="">
+                </div>
+                <div>
+                    <label for="numero">Número</label>
+                    <input type="text" id="numero" name="numero" placeholder="">
+                </div>
+                <div>
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" id="logradouro" name="logradouro">
+                </div>
+                <div>
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="bairro">
+                </div>
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade">
+                </div>
+                <div>
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" name="estado">
+                </div>
+                <button class="botao-dourado col-2">Fazer Solicitação</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer-bg">
+        <div class="footer container">
+            <h1 class="font-1-xl">Helpy Pet</h1>
+            <div class="footer-contato">
+                <h3 class="font-2-l-b">CONTATO</h3>
+                <ul class="font-2-xm cor-11">
+                    <li><a href="mailto:contato@helpypet.com">contato@helpypet.com</a></li>
+                    <li><a href="tel:+5598999999999">+55 11 99999-9999</a></li>
+                    <li>Rua Ali Perto, 42 - Cohama</li>
+                    <li>São Luís - MA</li>
+                </ul>
+            </div>
+
+            <div class="footer-informacoes">
+                <h3 class="font-2-l-b cor-11">INFORMAÇÕES</h3>
+                <nav aria-label="Menu Informações">
+                    <ul class="font-1-m">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Produtos</a></li>
+                        <li><a href="assinatura.html">Assinatura</a></li>
+                        <li><a href="adote_um_pet.html">Adote um Pet</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="footer-copy font-2-s cor-10">© 2025 Helpy Pet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

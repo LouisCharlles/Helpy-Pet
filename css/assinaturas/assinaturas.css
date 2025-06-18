@@ -1,0 +1,121 @@
+.wrapper-bg{
+    background-color: var(--cor-s1);
+}
+.assinaturas-bg{
+    padding-top: 80px;
+
+    background-color: #1e1e1e;
+}
+
+.titulo h1,p{
+    padding: 0px;
+}
+
+.titulo p{
+    margin-bottom: 1.1rem;
+}
+
+.titulo h1{
+    margin-bottom: 1rem;
+}
+
+.vantagens-bg{
+    padding:80px;
+    background-color: var(--cor-12);
+}
+
+.vantagens h2{
+    margin-bottom: 60px;
+}
+.vantagens ul{
+    background-color: var(--cor-11);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px 80px;
+    padding: 80px 40px;
+}
+
+.vantagens ul li > h3{
+    text-align: center;
+}
+.vantagens ul li > p{
+    text-align: center;
+}
+.vantagens li img{
+    justify-self: center;
+    margin-bottom: 8px;
+}
+.vantagens li > h3{
+    margin-bottom: 1rem;
+}
+
+.perguntas.container {
+    padding-top: 120px;
+}
+
+.perguntas.container h2{
+    margin-bottom: 60px;
+}
+
+.perguntas.container dl > div{
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.perguntas.container dl>div:nth-child(odd){
+    background-color: var(--cor-1);
+}
+
+.perguntas.container button{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+}
+.perguntas.container button::before{
+    content: "";
+    display: inline-block;
+    width:12px;
+    height: 8px;
+    background-color: var(--cor-p1);
+}
+
+.perguntas.container button::after{
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 6px;
+    background: url(/img/icones/seta-abrir.svg);
+    transition: transform 0.3s;
+}
+.perguntas.container button:hover::after,
+.perguntas.container button[aria-expanded=true]::after{
+    transform: rotate(180deg);
+}
+
+.js .perguntas.container dd{
+    padding-left: 20px;
+    padding-top: 16px;
+    max-width: 80ch;
+    display: none;
+}
+
+.js .perguntas.container .ativa{
+    display: block;
+}
+
+@media(max-width:800px){
+    .perguntas.container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .perguntas.container h2{
+        margin-bottom: 40px;
+    }
+}
+

@@ -1,0 +1,111 @@
+.produtos-bg{
+    background-color: var(--cor-p1);
+    margin-bottom: 7rem;
+}
+
+.botoes-produtos{
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+    place-items: center;
+}
+.botoes-produtos li{
+    justify-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--cor-s2);
+    border-radius: 100%;
+    cursor: pointer;
+}
+.botoes-produtos li:hover{
+    background-color: var(--cor-s1);
+    transition: 0.3s;
+}
+.botao-imagem{
+    display: block;
+    height: 20px;
+    margin-top: 0.6rem;
+}
+.produtos h2{
+    text-align: center;
+    text-decoration: var(--cor-s1) underline;
+    margin-bottom: 4rem;
+}
+
+.produtos-lista{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    place-items: center;
+    gap: 80px 64px;
+}
+
+.produtos-lista li{
+    background-color: var(--cor-s1);
+    border-radius: 10px;
+    position: relative;
+}
+
+.produtos-lista li:nth-child(1):after{
+    content:"Assinantes R$ 11,99";
+    display: inline-block;
+    font-weight: bold;
+    height: 44px;
+    width: 86px;
+    background-color: var(--cor-t1);
+    color: var(--cor-11);
+    border-radius: 4px;
+    position: absolute;
+    text-align: center;
+    top: 121px;
+    right: -48px;
+    padding: 4px 16px;
+    rotate: -30deg;
+}
+.produtos-lista .imagem-produto{
+    background-color: var(--cor-0);
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+
+.produtos-lista h3{
+    font: 500 1rem/1.5 "DynaPuff", sans-serif;
+    color:var(--cor-12);
+    overflow-wrap: break-word;
+}
+.produtos-lista p{
+    font: 600 1.2rem "Roboto", sans-serif;
+    color: var(--cor-s3);
+    justify-self: center;
+    margin-bottom: 1rem;
+    
+}
+.produtos-lista h3,p{
+    padding: 8px 16px;
+}
+
+.produtos-detalhe{
+    justify-self: end;
+    padding: 44px 22px;
+}
+
+.js-products{
+    display: none;
+}
+
+.js-products.produtos-ativos{
+    display: block;
+    animation: slideUp .5s forwards;
+    overflow: hidden;
+}
+
+@keyframes slideUp{
+    from{
+        opacity: 0;
+        max-height: 0;
+        transform: translateY(0);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(5px);
+    }
+}

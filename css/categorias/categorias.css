@@ -1,0 +1,31 @@
+.categorias{
+    place-items: center;
+    margin-bottom: 10rem
+}
+
+.categorias-lista{
+    display: flex;
+    gap: 7.5rem;
+}
+
+.categorias-lista li a{
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    place-items: center;
+    width: 116px;
+    height: 116px;
+    background-color: var(--cor-s1);
+    border-radius: 100%;
+}
+.categorias-lista li a:hover{
+    background-color: var(--cor-t1);
+}
+.categorias-lista img{
+    margin-top: 2rem;
+    height: 50px;
+}
+
+.categorias-lista h2{
+    color: var(--cor-12);
+}

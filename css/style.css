@@ -1,0 +1,15 @@
+@import url('/css/global.css');
+@import url('/css/header.css');
+@import url('/css/home.css');
+@import url('/css/categorias/categorias.css');
+@import url('/css/produtos/produtos.css');
+@import url(/css/assinaturas/assinaturas_home.css);
+@import url(/css/footer/footer.css);
+@import url(/css/adote_pet/adote_um_pet.css);
+@import url(/css/assinaturas/assinaturas.css);
+@import url(/css/solicitacao/solicitacao.css);
+/* Utilitários */
+@import url('/css/utils/componentes.css');
+@import url('/css/utils/cores.css');
+@import url('/css/utils/tipografia.css');
+@import url('/css/utils/formulario.css');

@@ -1,0 +1,26 @@
+.main-bg{
+    background: url(/img/elipse.svg) no-repeat right 1px top 20px;
+    margin-bottom: 5rem;
+}
+
+.introducao{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.introducao h1{
+    margin-bottom: 1.25rem;
+    color: inherit
+}
+
+.introducao p{
+    max-width: 44ch;
+    margin-bottom: 1.25rem;
+}
+.introducao-imagem{
+    display: flex;
+    justify-content: center;
+}
+
+
+

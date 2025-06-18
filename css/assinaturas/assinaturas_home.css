@@ -1,0 +1,72 @@
+.assinaturas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-top: 30px;
+    gap: 40px;
+    padding-bottom: 30px;
+}
+.assinaturas h2{
+    margin-bottom: 3rem;
+}
+
+.assinatura-item{
+    background-color: var(--cor-s1);
+    display: grid;
+    border-radius: 6px;
+}
+
+.assinatura-item h3{
+    background-color: var(--cor-12);
+    color: var(--cor-0);
+    padding: 10px;
+    text-align: center;
+}
+.assinatura-item h3::after{
+    content:"";
+    display: inline-block;
+    background: url(/img/icones/assinaturas/pata_assinatura.svg);
+    width: 48px;
+    height: 42px;
+    margin-left: 16px;
+}
+.ouro h3::after{
+    background: url(/img/icones/assinaturas/pata_ouro.svg);
+}
+.assinatura-lista{
+    padding: 24px 48px;
+}
+.assinatura-lista li{
+    margin-bottom: 28px;
+    color: var(--cor-s3);
+}
+.assinatura-lista li:last-child{
+    margin-bottom: 0;
+}
+.assinatura-lista li::before{
+    content:"";
+    display: inline-block;
+    background: url(/img/icones/assinaturas/check.svg);
+    width:23px;
+    height: 18px;
+    margin-right: 12px;
+}
+.prata{
+    grid-column: 1;
+}
+
+.assinatura-item p{
+    color: var(--cor-1);
+    padding: 24px 48px;
+}
+
+.assinatura-prata,.assinatura-ouro{
+    justify-self: start;
+    margin-left: 48px;
+    margin-bottom: 28px;
+}
+
+.assinatura-item img[src="/img/icones/assinaturas/patinhas.svg"]{
+    padding: 0 20px;
+    place-self: end;
+}

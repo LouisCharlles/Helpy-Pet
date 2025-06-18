@@ -1,0 +1,103 @@
+.wrapper-adote-bg{
+    background-color: var(--cor-t1);
+}
+.background-wrapper{
+    background-color: var(--cor-t1);
+
+}
+.adote-bg{
+    background: url(/img/pets/husk.png) no-repeat center top;
+    background-size: contain;
+}
+
+.adote-um-pet{
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+}
+.pata-decoracao{
+    grid-column: 1;
+}
+.gato-decoracao{
+    margin-bottom: 60px;
+}
+.balao-decorativo{
+    padding: 16px;
+    max-width: 32ch;
+    border-radius: 1rem;
+    display: flex;
+    place-self:start;
+}
+
+.amor{
+    background-color: #FC3E41;
+    align-self: center;
+    grid-column: 1/3;
+}
+.balao-lupa{
+    background-color: #00A6ED;
+    margin-bottom: 80px;
+}
+.muitos-pets{
+    grid-column: 2;
+    background-color: var(--cor-p1);
+    padding:20px;
+}
+.terceira-coluna{
+    grid-column: 3/ -1;
+    grid-row: -1;
+}
+
+.adote-um-pet h1{
+    text-align: center;
+}
+
+.pet{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.lulu{
+    background-color: var(--cor-p1);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.lulu img{
+    background-color: var(--cor-s1);
+    border-radius: 100%;
+}
+.pet-info{
+    align-content: center;
+    place-self: center;
+}
+
+.pet-info h2{
+    margin-bottom: 20px;
+}
+
+.pet-info p{
+    margin-bottom: 15px;
+}
+.pet-info a{
+    margin-top: 15px;
+}
+.pepe{
+    background-color: var(--cor-t1);
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.fred{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--cor-s1);
+    margin-bottom: 0;
+}
+
+.fred img{
+    background: url(/img/elipse.svg) no-repeat right;
+}
+
+.adote{
+    margin-top: 0;
+}
+
