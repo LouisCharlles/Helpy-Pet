@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helpy -Assinaturas</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
     <div class="wrapper-bg">
@@ -22,6 +23,30 @@
             </nav>
         </header>
     </div>
+    <section class="container-search"id="search-section">
+        <input id="searchbar" onkeyup="search_animal()" type="text" name="search" placeholder="Procure produtos para seu pet">
+        <ul id="list">
+            <li class="animals">
+                <a href="">
+                    <img src="/img/produtos/produto_para_cachorro.jpg" alt="Ração para cachorro">
+                    <p>Ração para cachorro</p> 
+                </a>
+            </li>
+            <li class="animals">
+                <a href="">
+                    <img src="/img/produtos/cat_nip.png" alt="erva para gato">
+                    <p>Erva para Gatos</p> 
+                </a>
+            </li>
+            <li class="animals">
+                <a href="">
+                    <img src="/img/produtos/Brinquedo.png" alt="Osso de Brinquedo">
+                    <p>Osso de Brinquedo</p> 
+                </a>
+            </li>
+
+        </ul>
+    </section>
     <main class="assinaturas-bg">
         <div class="titulo-bg">
             <div class="container titulo">
@@ -29,7 +54,7 @@
                 <h1 class="font-1-xxl cor-0">vamo de <span class="cor-p1">Helpy</span></h1>
             </div>
         </div>
-        <div class="container assinaturas">
+        <div class="container assinaturas fadeInLeft" data-anime="200" >
             <div class="assinatura-item prata">
                 <h3 class="font-1-xl">Pata De Prata</h3>
                 <ul class="assinatura-lista">
@@ -39,9 +64,9 @@
                 </ul>
                 <p class="font-2-m-b">R$ 199,00</p>
                 <img src="/img/icones/assinaturas/patinhas.svg" alt="patinhas">
-                <a class="assinatura-prata botao-prata" href="/html/solicitacao.html">Inscreva-se</a>
+                <a class="assinatura-prata botao-prata" href="./solicitacao.html?tipo=assinatura&produto=prata">Inscreva-se</a>
             </div>
-            <div class="assinatura-item ouro">
+            <div class="assinatura-item ouro fadeInRight" data-anime="400">
                 <h3 class="font-1-xl">Pata De Ouro</h3>
                 <ul class="assinatura-lista">
                     <li class="font-2-m">Acesso a descontos de 40% em nossos produtos.</li>
@@ -51,7 +76,7 @@
                 </ul>
                 <p class="font-2-m-b">R$ 249,00</p>
                 <img src="/img/icones/assinaturas/patinhas.svg" alt="patinhas">
-                <a class="botao-dourado assinatura-ouro" href="/html/solicitacao.html">Inscreva-se</a>
+                <a class="botao-dourado assinatura-ouro" href="./solicitacao.html?tipo=assinatura&produto=ouro">Inscreva-se</a>
             </div>
         </div>
     </main>
@@ -143,5 +168,9 @@
             <p class="footer-copy font-2-s cor-10">© 2025 Helpy Pet. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="/js/assinaturas/ativar_perguntas.js"></script>
+    <script src="/js/search_bar/search.js"></script>
+    <script src="/js/plugins/script.js"></script>
+    <script>if(window.SimpleAnime){new SimpleAnime();}</script>
 </body>
 </html>
