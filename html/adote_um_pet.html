@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helpy - Adote um Pet</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
     <div class="wrapper-adote-bg">
@@ -22,17 +23,41 @@
             </nav>
         </header>
     </div>
+    <section class="container-search"id="search-section">
+        <input id="searchbar" onkeyup="search_animal()" type="text" name="search" placeholder="Procure produtos para seu pet">
+        <ul id="list">
+            <li class="animals">
+                <a href="">
+                    <img src="/img/produtos/produto_para_cachorro.jpg" alt="Ração para cachorro">
+                    <p>Ração para cachorro</p> 
+                </a>
+            </li>
+            <li class="animals">
+                <a href="">
+                    <img src="/img/produtos/cat_nip.png" alt="erva para gato">
+                    <p>Erva para Gatos</p> 
+                </a>
+            </li>
+            <li class="animals">
+                <a href="">
+                    <img src="/img/produtos/Brinquedo.png" alt="Osso de Brinquedo">
+                    <p>Osso de Brinquedo</p> 
+                </a>
+            </li>
+
+        </ul>
+    </section>
     <div class="background-wrapper">
         <main class="adote-bg">
             <div class="container adote-um-pet">
-                <div class="balao-decorativo amor">
+                <div class="balao-decorativo amor fadeInLeft" data-anime="300">
                     <img src="/img/icones/coração.svg" alt="coração">
                     <p class="font-1-l cor-0">Preencha-os com amor</p>
                 </div>
                 <div class="pata-decoracao">
                     <img src="/img/icones/adote_um_pet/detalhe_pata.svg" alt="pata">
                 </div>
-                <div class="balao-decorativo muitos-pets">
+                <div class="balao-decorativo muitos-pets fadeInLeft" data-anime="400">
                     <img src="/img/icones/adote_um_pet/pata_muitos_pets.svg" alt="pata detalhe">
                     <p class="font-1-l cor-12">Muitos Pets!</p>
                 </div>
@@ -40,43 +65,42 @@
                     <div class="gato-decoracao">
                         <img src="/img/icones/adote_um_pet/detalhe_gatinho.svg" alt="detalhe gatinho">
                     </div>
-                    <div class="balao-decorativo balao-lupa">
+                    <div class="balao-decorativo balao-lupa fadeInRight" data-anime="500">
                         <p class="font-1-l cor-10">Encontre seu Pet Aqui</p>
                         <img src="/img/icones/lupa_colorida.svg" alt="lupa">
                     </div>
-                    <h1 class="font-1-l">Seu Novo Pet Está te esperando<span class="font-1-xxl">👇</span></h1>
+                    <h1 class="font-1-l fadeInDown" data-anime="700">Seu Novo Pet Está te esperando<span class="font-1-xxl">👇</span></h1>
                 </div>
             </div>
         </main>
     </div>
     
-    <section class="pet lulu">
+    <section class="pet lulu js-scroll">
         <img src="/img/pets/cachorro_preto.png" alt="cachorro preto">
         <div class="container pet-info">
             <h2 class="font-1-xxl">Lulu</h2>
             <p class="font-1-m">Raça: Não definida</p>
             <p class="font-1-m">Descrição do Pepe: Oii, eu sou a Lulu tenho 9 meses, gosto de comer muito ficar cheirosa e brincar com meus aumigos
             faço amizade com todo mundo! 🐶</p>
-            <a class="botao-roxo" href="adote_um_pet.html">Quero Este!</a>
+            <a class="botao-roxo" href="./solicitacao.html?tipo=pet&produto=lulu">Quero Este!</a>
         </div>
     </section>
-    <section class="pet pepe">
+    <section class="pet pepe js-scroll">
         <div class="container pet-info">
             <h2 class="font-1-xxl">Pepe</h2>
             <p class="font-1-m">Raça: Chihuahua</p>
             <p class="font-1-m">Descrição do Pepe: Oii, eu sou o pepe tenho 9 meses, gosto de comer muito ficar cheiroso e brincar com meus aumigos
             faço amizade com todo mundo! 🐶</p>
-            <a class="botao-dourado" href="adote_um_pet.html">Quero Este!</a>
+            <a class="botao-dourado" href="./solicitacao.html?tipo=pet&produto=pepe">Quero Este!</a>
         </div>
         <img src="/img/pets/cachorro_orelhudo.png" alt="cachorro orelhudo">
     </section>
-    <section class="pet fred">
+    <section class="pet fred js-scroll">
         <div class="container pet-info">
-            <h2 class="font-1-xxl">Pepe</h2>
-            <p class="font-1-m">Raça: Chihuahua</p>
-            <p class="font-1-m">Descrição do Pepe: Oii, eu sou o pepe tenho 9 meses, gosto de comer muito ficar cheiroso e brincar com meus aumigos
-            faço amizade com todo mundo! 🐶</p>
-            <a class="botao-dourado" href="adote_um_pet.html">Quero Este!</a>
+            <h2 class="font-1-xxl">Fred</h2>
+            <p class="font-1-m">Raça: Poodle</p>
+            <p class="font-1-m">Descrição do Fred: Auuu, eu sou o fred tenho 4 meses, gosto de ficar limpinho e cheiroso e brincar, sou brincalhão e gosto muito de carinho na barriga.🐶</p>
+            <a class="botao-dourado" href="./solicitacao.html?tipo=pet&produto=fred">Quero Este!</a>
         </div>
         <img src="/img/pets/cachorro_felpudo.png" alt="cachorro felpudo">
     </section>
@@ -107,5 +131,13 @@
             <p class="footer-copy font-2-s cor-10">© 2025 Helpy Pet. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="/js/adote_um_pet/animacao_scroll.js"></script>
+    <script src="/js/search_bar/search.js"></script>
+    <script src="/js/plugins/script.js"></script>
+    <script>
+        if(window.SimpleAnime){
+            new SimpleAnime();
+        }
+    </script>
 </body>
 </html>
