@@ -44,7 +44,6 @@
     border-radius: 10px;
     position: relative;
 }
-
 .produtos-lista li:nth-child(1):after{
     content:"Assinantes R$ 11,99";
     display: inline-block;
@@ -88,11 +87,11 @@
     padding: 44px 22px;
 }
 
-.js-products{
+.js .js-products{
     display: none;
 }
 
-.js-products.produtos-ativos{
+.js .js-products.produtos-ativos{
     display: block;
     animation: slideUp .5s forwards;
     overflow: hidden;
