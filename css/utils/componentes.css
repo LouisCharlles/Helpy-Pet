@@ -27,7 +27,9 @@
     border-radius: 10px;
     font: 600 2rem/1.5 "DynaPuff",sans-serif;
 }
-
+.botao-prata:hover{
+    background-color: var(--cor-6);
+}
 .botao-roxo{
     display: inline-block;
     padding: 15px 20px;
