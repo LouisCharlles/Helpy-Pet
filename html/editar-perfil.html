@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Perfil - Pet</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="profile-container">
+            <div class="profile-image-wrapper">
+                <div class="profile-image">
+                    <div class="avatar">
+                        <div class="avatar-inner"></div>
+                    </div>
+                    <div class="status-badge" title="Usuário Premium">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-info">
+                <h1 class="profile-name">Maria Souza</h1>
+                <div class="profile-contact">
+                    <p class="profile-email"><i class="fas fa-envelope"></i> maria@email.com</p>
+                    <p class="profile-phone"><i class="fas fa-phone-alt"></i> (11) 98765-4321</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="perfil">
+            <h1>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="#f7b801"
+                    style="vertical-align: middle; margin-right: 8px;">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 17.25V21h3.75l11.06-11.06-3.75-3.75L3 17.25zM20.71 
+      7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 
+      1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z" />
+                </svg>
+                Editar Perfil
+            </h1>
+            <div class="card">
+                <div class="foto-perfil">
+                    <img src="rosto-mulher, teste.png" alt="Foto do usuário" />
+                    <button id="botao-alterar">Alterar foto</button>
+                </div>
+                <form>
+                    <input type="text" placeholder="Nome de usuário" />
+                    <input type="text" placeholder="Nome completo" />
+                    <input type="email" placeholder="E-mail" />
+                    <input type="text" placeholder="Telefone" />
+                    <input type="text" placeholder="País">
+                    <input type="text" placeholder="Estado">
+                    <input type="text" placeholder="Cidade">
+                    <input type="text" placeholder="Bairro">
+                    <p>Senha</p>
+                    <input type="password" placeholder="Nova senha" />
+                    <input type="password" placeholder="Confirmar senha" id="confirmar" />
+                </form>
+                <div class="botoes">
+                    <button class="salvar">Salvar alterações</button>
+                    <button class="excluir">Excluir conta</button>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+
+</html>
