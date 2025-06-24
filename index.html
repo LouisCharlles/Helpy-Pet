@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpy Pet - Controle de Estoque</title>
+    <!-- importar a fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- biblioteca icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- header menu pagina(logo, navegação e icones de usuári)-->
+    <header class="cabecalho-principal">
+        <div class="container-conteudo">
+            <div class="logo-site">Helpy Pet</div>
+            <nav class="navegacao-principal">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Buscar</a></li>
+                    <li><a href="#">Assinatura</a></li>
+                </ul>
+            </nav>
+            <div class="icones-usuario">
+                <i class="fas fa-user-circle icone-usuario"></i>
+                <i class="fas fa-shopping-cart icone-usuario"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- header principal(controle de estoque) -->
+    <main class="secao-principal-conteudo">
+        <div class="container-conteudo">
+            <h1 class="titulo-pagina">Controle de Estoque</h1>
+            
+            <!-- area de controle(campos de busca e botão para adicionar produto)-->
+            <div class="area-controles">
+                <div class="campos-busca">
+                    <div class="grupo-input-busca">
+                        <i class="fas fa-search icone-input"></i>
+                        <input type="text" placeholder="Buscar Produtos" class="input-busca">
+                    </div>
+                    <div class="grupo-input-busca">
+                        <i class="fas fa-filter icone-input"></i>
+                        <input type="text" placeholder="Categoria" class="input-busca">
+                    </div>
+                </div>
+                <button class="botao-adicionar-produto">
+                    <i class="fas fa-plus"></i> Adicionar Novo Produto
+                </button>
+            </div>
+
+            <!--tabela produtos -->
+            <div class="tabela-listagem-produtos">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Categoria</th>
+                            <th>Preço</th>
+                            <th>Qtd</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- linhas para categorizar produtos (estoque normal, abaixo, zerado)-->
+                        <tr class="linha-produto estoque-normal">
+                            <td><i class="fas fa-bone icone-produto"></i> Ração Pedigree</td>
+                            <td>Alimentos</td>
+                            <td>R$ 50.00</td>
+                            <td>10</td>
+                            <td><i class="fas fa-edit icone-acao"></i></td>
+                        </tr>
+                        <tr class="linha-produto estoque-normal">
+                            <td><i class="fas fa-bone icone-produto"></i> Brinquedo Bola</td>
+                            <td>Brinquedos</td>
+                            <td>R$ 25.00</td>
+                            <td>15</td>
+                            <td><i class="fas fa-edit icone-acao"></i></td>
+                        </tr>
+                        <tr class="linha-produto estoque-baixo">
+                            <td><i class="fas fa-bone icone-produto"></i> Ração Golden</td>
+                            <td>Alimentos</td>
+                            <td>R$ 60.00</td>
+                            <td>8</td>
+                            <td><i class="fas fa-edit icone-acao"></i> <i class="fas fa-exclamation-triangle icone-alerta"></i></td>
+                        </tr>
+                        <tr class="linha-produto estoque-baixo">
+                            <td><i class="fas fa-bone icone-produto"></i> Antipulgas </td>
+                            <td>Medicamentos</td>
+                            <td>R$ 80.00</td>
+                            <td>8</td>
+                            <td><i class="fas fa-edit icone-acao"></i> <i class="fas fa-exclamation-triangle icone-alerta"></i></td>
+                        </tr>
+                        <tr class="linha-produto estoque-baixo">
+                            <td><i class="fas fa-bone icone-produto"></i> Coleira Antipulgas</td>
+                            <td>Acessórios</td>
+                            <td>R$ 35.00</td>
+                            <td>8</td>
+                            <td><i class="fas fa-edit icone-acao"></i> <i class="fas fa-exclamation-triangle icone-alerta"></i></td>
+                        </tr>
+                        <tr class="linha-produto estoque-esgotado">
+                            <td><i class="fas fa-bone icone-produto"></i> Shampoo Pet</td>
+                            <td>Higiene</td>
+                            <td>R$ 40.00</td>
+                            <td>0</td>
+                            <td><i class="fas fa-edit icone-acao"></i> <i class="fas fa-exclamation-triangle icone-alerta"></i></td>
+                        </tr>
+                        <tr class="linha-produto estoque-esgotado">
+                            <td><i class="fas fa-bone icone-produto"></i> Osso de Borracha</td>
+                            <td>Brinquedos</td>
+                            <td>R$ 15.00</td>
+                            <td>0</td>
+                            <td><i class="fas fa-edit icone-acao"></i> <i class="fas fa-exclamation-triangle icone-alerta"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- botao filtro de tabela -->
+            <div class="area-botoes-status">
+                <div class="cartao-indicador-status cartao-ativo" id="btn-produtos-cadastrados">
+                    <p>Produtos Cadastrados</p>
+                    <span>125</span>
+                </div>
+                <div class="cartao-indicador-status" id="btn-estoque-baixo">
+                    <p>Estoque Baixo</p>
+                    <span>15</span>
+                </div>
+                <div class="cartao-indicador-status" id="btn-produtos-esgotados">
+                    <p>Produtos Esgotados</p>
+                    <span>5</span>
+                </div>
+            </div>
+
+            <!--gráfico de barras  -->
+            <div class="area-grafico-barras">
+                <div class="barra-individual-grafico" style="height: 170px;">Alimentos</div>
+                <div class="barra-individual-grafico" style="height: 100px;">Medicamentos</div>
+                <div class="barra-individual-grafico" style="height: 200px;">Brinquedos</div>
+                <div class="barra-individual-grafico" style="height: 120px;">Acessórios</div>
+                <div class="barra-individual-grafico" style="height: 180px;">Higiene</div>
+            </div>
+        </div>
+    </main>
+
+    <!--footer da pagina( contato e infos adicionais) -->
+    <footer class="fundo-rodape-principal">
+        <div class="container-conteudo">
+            <div class="conteudo-rodape">
+                <h1 class="titulo-rodape">Helpy Pet</h1>
+                <div class="rodape-contato">
+                    <h3>CONTATO</h3>
+                    <ul>
+                        <li>+55 98 9999-9999</li>
+                        <li>contato@helpypet.com</li>
+                        <li>Rua ali perto, 42 - Cohama</li>
+                        <li>São Luís - MA</li>
+                    </ul>
+                </div>
+                <div class="rodape-informacoes">
+                    <h3>INFORMAÇÕES</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Adote um Pet</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Assinaturas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
