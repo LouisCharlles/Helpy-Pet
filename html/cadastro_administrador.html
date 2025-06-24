@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Administrativa - HelpyPet</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+
+</head>
+<body>
+    <div class="app-container">
+        <div class="auth-container admin-auth-container">
+             <!-- Painel esquerdo com imagem e informações -->
+            <div class="auth-panel info-panel admin-info-panel">
+                <div class="logo-container">
+                    <div class="logo">
+                        <i class="fas fa-paw"></i>
+                        <span>HelpyPet</span>
+                    </div>
+                    <div class="admin-badge">Área Administrativa</div>
+                </div>
+                <div class="panel-content">
+                    <h1 class="panel-title">Gerenciamento de Estoque</h1>
+                    <p class="panel-description">Acesse o sistema para gerenciar produtos, fornecedores e controlar o estoque da loja.</p>
+                    <div class="panel-image">
+                        <img src="https://img.freepik.com/free-vector/inventory-management-abstract-concept_335657-3015.jpg" alt="Ilustração de gerenciamento de estoque">
+                    </div>
+                    <div class="panel-features">
+                        <div class="feature-item">
+                            <i class="fas fa-boxes"></i>
+                            <span>Controle de estoque</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Relatórios detalhados</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Gestão de fornecedores</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Painel direito com formulário de login -->
+            <div class="auth-panel form-panel admin-form-panel">
+                <div class="form-container" id="adminLoginForm">
+                    <h2 class="form-title">Acesso Administrativo</h2>
+                    <p class="form-subtitle">Informe suas credenciais para acessar</p>
+                    
+                    <form class="auth-form">
+                        <div class="form-group">
+                            <label for="adminEmail">E-mail corporativo</label>
+                            <div class="input-container">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="adminEmail" placeholder="seu@helpypet.com.br" required>
+                            </div>
+                            <span class="error-message" id="adminEmailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="password-header">
+                                <label for="adminPassword">Senha</label>
+                                <a href="#" class="forgot-password">Esqueceu?</a>
+                            </div>
+                            <div class="input-container">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="adminPassword" placeholder="••••••••" required>
+                                <button type="button" class="toggle-password">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                            <span class="error-message" id="adminPasswordError"></span>
+                        </div>
+                        
+                        <div class="form-group role-selection">
+                            <label>Tipo de acesso</label>
+                            <div class="role-options">
+                                <label class="role-option">
+                                    <input type="radio" name="role" value="admin" checked>
+                                    <span class="role-checkmark admin"></span>
+                                    <span class="role-label">Administrador</span>
+                                </label>
+                                <label class="role-option">
+                                    <input type="radio" name="role" value="employee">
+                                    <span class="role-checkmark employee"></span>
+                                    <span class="role-label">Funcionário</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group remember-me">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="adminRememberMe">
+                                <span class="checkmark"></span>
+                                Lembrar de mim
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn admin-submit-btn">
+                            <span class="btn-text">Entrar no Sistema</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                    
+                    <div class="form-footer">
+                        <p>Novo funcionário? <a href="#" id="showAdminRegister">Solicitar acesso</a></p>
+                    </div>
+                </div>
+
+                <!-- Formulário de cadastro administrativo (inicialmente oculto) -->
+                <div class="form-container" id="adminRegisterForm" style="display: none;">
+                    <h2 class="form-title">Solicitar Acesso</h2>
+                    <p class="form-subtitle">Preencha os dados para solicitar acesso ao sistema</p>
+                    
+                    <form class="auth-form">
+                        <div class="form-group">
+                            <label for="adminRegisterName">Nome completo</label>
+                            <div class="input-container">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="adminRegisterName" placeholder="Seu nome completo" required>
+                            </div>
+                            <span class="error-message" id="adminNameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="adminRegisterEmail">E-mail corporativo</label>
+                            <div class="input-container">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="adminRegisterEmail" placeholder="seu@helpypet.com.br" required>
+                            </div>
+                            <span class="error-message" id="adminRegisterEmailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="adminRegisterPhone">Telefone</label>
+                            <div class="input-container">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" id="adminRegisterPhone" placeholder="(00) 00000-0000" required>
+                            </div>
+                            <span class="error-message" id="adminPhoneError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="adminPosition">Cargo</label>
+                            <div class="input-container">
+                                <i class="fas fa-briefcase"></i>
+                                <input type="text" id="adminPosition" placeholder="Ex: Gerente de Estoque" required>
+                            </div>
+                            <span class="error-message" id="adminPositionError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="adminDepartment">Departamento</label>
+                            <div class="input-container">
+                                <i class="fas fa-building"></i>
+                                <select id="adminDepartment" required>
+                                    <option value="" disabled selected>Selecione um departamento</option>
+                                    <option value="estoque">Estoque</option>
+                                    <option value="vendas">Vendas</option>
+                                    <option value="compras">Compras</option>
+                                    <option value="financeiro">Financeiro</option>
+                                    <option value="rh">Recursos Humanos</option>
+                                    <option value="ti">TI</option>
+                                </select>
+                            </div>
+                            <span class="error-message" id="adminDepartmentError"></span>
+                        </div>
+                        
+                        <div class="form-group role-selection">
+                            <label>Tipo de acesso solicitado</label>
+                            <div class="role-options">
+                                <label class="role-option">
+                                    <input type="radio" name="requestRole" value="admin">
+                                    <span class="role-checkmark admin"></span>
+                                    <span class="role-label">Administrador</span>
+                                </label>
+                                <label class="role-option">
+                                    <input type="radio" name="requestRole" value="employee" checked>
+                                    <span class="role-checkmark employee"></span>
+                                    <span class="role-label">Funcionário</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="adminJustification">Justificativa</label>
+                            <div class="input-container textarea-container">
+                                <i class="fas fa-comment-alt"></i>
+                                <textarea id="adminJustification" placeholder="Explique brevemente por que você precisa de acesso ao sistema" required></textarea>
+                            </div>
+                            <span class="error-message" id="adminJustificationError"></span>
+                        </div>
+                        
+                        <div class="form-group terms-container">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="adminTermsAgree" required>
+                                <span class="checkmark"></span>
+                                Concordo com a <a href="#">Política de Segurança</a> e <a href="#">Termos de Uso</a> do sistema
+                            </label>
+                            <span class="error-message" id="adminTermsError"></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn admin-submit-btn">
+                            <span class="btn-text">Enviar Solicitação</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <div class="form-footer">
+                        <p>Já tem acesso? <a href="#" id="showAdminLogin">Entrar no sistema</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/login_administrador/admin-script.js"></script>
+    <script src="admin-script.js"></script>
+</body>
+</html>
