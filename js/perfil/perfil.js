@@ -63,9 +63,6 @@ function setupInteractions() {
     const editProfileBtn = document.querySelector('.edit-profile-btn');
     if (editProfileBtn) {
         editProfileBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            showNotification('Modo de edição de perfil ativado', 'info');
-            
             //! Simular efeito de clique
             this.classList.add('clicked');
             setTimeout(() => {

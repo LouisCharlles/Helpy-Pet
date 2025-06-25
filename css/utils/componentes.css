@@ -43,3 +43,56 @@
 .botao-roxo:hover{
     background-color: var(--cor-s2);
 }
+
+.container-search {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+}
+.container-search input{
+    place-self: center;
+}
+.container-search input:focus{
+    border: 3px solid var(--cor-p1);
+
+}
+
+#searchbar {
+    margin: 10px;
+    padding: 16px;
+    border-radius: 5px;
+    width: 99%;
+    box-sizing: border-box;
+}
+
+#list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#list li a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--cor-0);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: var(--cor-12);
+}
+
+#list li a:hover{
+    border: 2px solid var(--cor-s3);
+}
+
+#list img{
+    max-width: 64px;
+    border-radius: 0.5rem;
+}
+.animals {
+    font-size: 1.2em;
+    padding: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}

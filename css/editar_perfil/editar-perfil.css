@@ -63,7 +63,10 @@ nav ul li a {
 nav ul li a.active {
   color: #6D28D9;
 }
-
+header a{
+  color: #6D28D9;
+  font-weight: bold;
+}
 main {
   padding: 40px 20px;
   max-width: 900px;
@@ -104,7 +107,7 @@ main {
 form {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+   gap: 30px;
   justify-content: center;
 }
 
@@ -133,9 +136,7 @@ form input {
   transform: scale(90%);
 }
 
-#confirmar {
-  margin-left: 7%;
-}
+
 
 .salvar {
   background-color: #4285f4;

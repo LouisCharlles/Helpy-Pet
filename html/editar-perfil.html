@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Editar Perfil - Pet</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/editar_perfil/editar-perfil.css" />
 </head>
 
 <body>
-    <header class="header">
+    <header>
+        <a href="./index.html">Voltar</a>
         <div class="profile-container">
             <div class="profile-image-wrapper">
                 <div class="profile-image">
@@ -31,7 +32,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="main-editar-perfil">
         <section class="perfil">
             <h1>
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="#f7b801"
@@ -45,21 +46,20 @@
             </h1>
             <div class="card">
                 <div class="foto-perfil">
-                    <img src="rosto-mulher, teste.png" alt="Foto do usuário" />
+                    <img src="/img/editar-perfil/rosto-mulher, teste.png" alt="Foto do usuário" />
                     <button id="botao-alterar">Alterar foto</button>
                 </div>
                 <form>
-                    <input type="text" placeholder="Nome de usuário" />
-                    <input type="text" placeholder="Nome completo" />
-                    <input type="email" placeholder="E-mail" />
-                    <input type="text" placeholder="Telefone" />
+                    <input type="text" placeholder="Nome de usuário">
+                    <input type="text" placeholder="Nome completo">
+                    <input type="email" placeholder="E-mail">
+                    <input type="text" placeholder="Telefone">
                     <input type="text" placeholder="País">
                     <input type="text" placeholder="Estado">
                     <input type="text" placeholder="Cidade">
                     <input type="text" placeholder="Bairro">
-                    <p>Senha</p>
-                    <input type="password" placeholder="Nova senha" />
-                    <input type="password" placeholder="Confirmar senha" id="confirmar" />
+                    <input type="password" placeholder="Nova senha">
+                    <input type="password" placeholder="Confirmar senha" id="confirmar">
                 </form>
                 <div class="botoes">
                     <button class="salvar">Salvar alterações</button>
