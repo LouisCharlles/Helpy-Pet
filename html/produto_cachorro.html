@@ -13,21 +13,24 @@
 <body>
     <header class="site-header">
         <div class="container header-container">
-            <div class="logo">
-                <i class="fas fa-paw"></i>
-                <span>HelpyPet</span>
-            </div>
+            <a href="/html/index.html" class="logo-link">
+                <div class="logo">
+                    <i class="fas fa-paw"></i>
+                    <span>HelpyPet</span>
+                </div>
+            </a>
+            
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#" class="active">Produtos</a></li>
+                    <li><a href="/html/index.html">Início</a></li>
+                    <li><a href="/html/produto_cachorro.html" class="active">Produtos</a></li>
                     <li><a href="#">Categorias</a></li>
                     <li><a href="#">Ofertas</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <button class="btn-buscar"><i class="fas fa-search"></i></button>
                 <button class="favorites-btn"><i class="fas fa-heart"></i> <span class="badge">2</span></button>
                 <button class="cart-btn"><i class="fas fa-shopping-cart"></i> <span class="badge">3</span></button>
                 <button class="account-btn"><i class="fas fa-user"></i></button>
@@ -35,6 +38,31 @@
             </div>
         </div>
     </header>
+
+    <section class="container-search"id="search-section">
+        <input id="searchbar" onkeyup="search_animal()" type="text" name="search" placeholder="Procure produtos para seu pet">
+        <ul id="list">
+            <li class="animals">
+                <a href="/html/produto_cachorro.html">
+                    <img src="/img/produtos/osso_dental.jpg" alt="Osso dental para cachorro ">
+                    <p>Osso dental para cachorro</p> 
+                </a>
+            </li>
+            <li class="animals">
+                <a href="/html/produto_gato.html">
+                    <img src="/img/produtos/torre_bolinhas.jpg" alt="Torre de bolinhas para gato">
+                    <p>Torre de bolinhas para Gatos</p> 
+                </a>
+            </li>
+            <li class="animals">
+                <a href="/html/produto_cachorro.html">
+                    <img src="/img/produtos/Brinquedo.png" alt="Osso de Brinquedo">
+                    <p>Osso de Brinquedo</p> 
+                </a>
+            </li>
+
+        </ul>
+    </section>
 
     <main class="product-page">
         <div class="container">
@@ -368,6 +396,7 @@
     </footer>
 
     <script src="/js/produtos/produtospara_cachorro/"></script>
+    <script src="/js/search_bar/search.js"></script>
 </body>
 </html>
 
