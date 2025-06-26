@@ -73,6 +73,33 @@
                     <i class="fas fa-plus"></i> Adicionar Novo Produto
                 </button>
             </div>
+            <div class="wrapper">
+                <form class="formulario-adicionar-produto">
+                <label for="produto-estoque" class="font-2-s">Produto</label>
+                <input type="text" id="produto-estoque" placeholder="Nome do Produto">
+                <label for="categoria-estoque" class="font-2-s">Categoria</label>
+                <select id="categoria-estoque">
+                    <option value="alimentos">Alimentos</option>
+                    <option value="Brinquedos">Brinquedos</option>
+                    <option value="Medicamentos">Medicamentos</option>
+                    <option value="Acessorios">Acessórios</option>
+                    <option value="Higiene">Higiene</option>
+                </select>
+                <label for="preco-estoque" class="font-2-s">Preço</label>
+                <input type="number" id="preco-estoque" placeholder="R$ 0,00" step="0.01" min="0">
+                <label for="quantidade-estoque" class="font-2-s">Quantidade</label>
+                <input type="number" id="quantidade-estoque" placeholder="0" min="0">
+                <div class="botoes-formulario">
+                    <button type="submit" class="botao-salvar-produto">
+                    <i class="fas fa-save"></i> Salvar Produto
+                    </button>
+                    <button type="reset" class="botao-cancelar-produto">
+                    <i class="fas fa-times"></i> Cancelar
+                    </button>
+                </div>
+            </form>
+            </div>
+            
 
             <!--tabela produtos -->
             <div class="tabela-listagem-produtos">
@@ -196,7 +223,7 @@
             <p class="footer-copy font-2-s cor-10">© 2025 Helpy Pet. Todos os direitos reservados.</p>
         </div>
     </footer>
-
-   <script src="/js/search_bar/search.js"></script>
+    <script src="/js/search_bar/search.js"></script>
+    <script src="/js/controle_estoque/controle_estoque.js"></script>
 </body>
 </html>

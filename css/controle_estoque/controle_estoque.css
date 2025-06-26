@@ -310,7 +310,72 @@
     flex-direction: column;
     gap: 10px;
 }
+.wrapper{
+    display: none;
+}
+.formulario-adicionar-produto{
+    background-color: var(--cor-branco);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+.formulario-adicionar-produto label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario-adicionar-produto input[type="text"],
+.formulario-adicionar-produto input[type="number"],
+.formulario-adicionar-produto input[type="file"] {
+    padding: 10px;
+    border: 1px solid var(--cor-cinza-medio);
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.formulario-adicionar-produto input[type="text"]:focus,
+.formulario-adicionar-produto input[type="number"]:focus,
+.formulario-adicionar-produto input[type="file"]:focus {
+    outline: none;
+    border-color: var(--cor-amarelo-escuro);
+    background: var(--cor-fundo-claro);
+    box-shadow: 0px 0px 0px 2px rgba(210, 159, 18, 0.5);
+}
+.botoes-formulario {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+.botao-salvar-produto{
+    background-color: var(--cor-amarelo-principal);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: center;
+    align-self: start;
+}
+
+.botao-cancelar-produto{
+    background-color: var(--cor-cinza-medio);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: center;
+    align-self: start;
+}
 /* responsividade*/
 @media (max-width: 768px) {
     .cabecalho-principal .navegacao-principal ul {
